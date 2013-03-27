@@ -113,7 +113,7 @@ function updateGraph(mesures, graphtype, probe_id, labels, units, period) {
 
 					fake_values.push([$.jsDate.strftime(desired_start_date.getTime(), "%Y-%m-%d %H:%M:%S"), 0])
 				}
-				graph_data[i] = graph_data[i].concat(reverseArray(fake_values, false));
+				// graph_data[i] = graph_data[i].concat(reverseArray(fake_values, false));
 			};
 			var maxDate = graph_data[0][0][0];
 			var minDate = graph_data[0][graph_data[0].length-1][0];
@@ -262,4 +262,3 @@ $(window).resize(function() {
 		resetAxes : false
 	});
 });
-
